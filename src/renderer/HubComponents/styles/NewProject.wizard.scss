@@ -1,0 +1,38 @@
+.wizard{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 98;
+}
+
+
+
+.W_box{
+    background: green;
+    padding: 90px 75px;
+    border-radius: 10px;
+} 
+.loadingBar_NewProject{
+    margin-bottom: 60px;
+}
+.w_boxText, .w_boxIcon{
+   display: grid;
+    justify-content: center; 
+    text-align: center;
+}
+.w_boxButton, .w_boxInput{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.w_boxIcon{
+    margin-bottom: 15px;
+}
+.w_boxInput{
+    margin-top: 20px;
+}

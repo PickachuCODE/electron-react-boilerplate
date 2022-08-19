@@ -1,0 +1,48 @@
+.SideBar{
+    // background: gold
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    
+    .hubTopBar{
+        border-right: white 2px solid;
+        padding: 13px 0;
+        display: grid;
+        margin-bottom: 60px;
+        // justify-content: right;
+    }
+    .hubButtomBar{
+        border-right: white 2px solid;
+        padding: 6px 0;
+        display: grid;
+        // justify-content: right;
+    }
+}
+.sideBarBox{
+    opacity: 0.8;
+    height: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    margin: 1px 0 1px 40px;
+    cursor: pointer;
+    .iconSideBox{
+        height: 35px;
+        width: 35px;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        img{
+            width: 20px;
+        }
+    }
+    
+    .sidebarText{
+        font-size: 15px;
+    }
+}
+.sideBarBox:hover{
+    opacity:1;
+    border-left: 2.8px solid white;
+}

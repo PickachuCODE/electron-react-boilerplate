@@ -1,0 +1,42 @@
+a{
+    text-decoration: none;
+}
+
+.Header{
+    font-size: 25px;
+    font-weight: 700;
+}
+.Subtext{
+    font-size: 15px;
+}
+button{
+    border: none;
+    background:none;
+    font-size: 14px;
+}
+button:hover{
+    opacity: .9;
+}
+.searchBarWrap{
+    background: blue;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    padding: 5px 20px;
+}
+.SearchBar{
+    border: none;
+    height: 30px;
+    width: 100%;
+    text-align: right;
+    padding: 0 15px 0 10px;
+    outline: none;
+    background: none;
+}
+.iconbox{
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,51 @@
+.ProjectCards {
+  height: fit-content;
+  width: 210px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  .cardTop {
+    height: calc(228px / 1.48);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+  }
+  .cardBottom {
+    height: calc(228px - (228px / 1.48));
+    padding: 0px 15px;
+    display: grid;
+    align-items: center;
+    border-radius:  0 0 15px 15px;
+    .projectTime {
+      font-size: 12px;
+      margin-top: 8px;
+      // opacity: 0.6;
+    }
+  }
+  .cardOptions {
+    display: none; //grid
+    justify-content: right;
+    .cardOptionsWrap {
+        margin: 8px 15px 0px;
+        display: flex;
+        gap: 10px;
+      .optionBox {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.iconBox {
+  margin-top: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: mediumseagreen;
+  border-radius: 10px;
+}

@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Rubik;
+    src: url(../../lib/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    font-family: Rubik;
+}
+.DashBoard{
+    height: 100vh;
+    
+}
+.appWrap{
+    height: 100vh;
+}
+.LogoSection{
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 99;
+        .LogoWraper{
+            overflow: hidden;
+        img {
+            width: 150px;
+        }}
+    }
+
+.taskbar{
+    height: 37px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background: #000000ae;
+    backdrop-filter: blur(40px);
+    display: grid;
+    align-items: center;
+}
+.taskbarWrap{
+    padding:0px 0px 0 20px;
+    height: 37px;
+    display: grid;
+    grid-template-columns: 0.2fr 5fr 2fr;
+    .logoImage{
+        display: grid;
+        align-items: center;
+    }
+}
+.taskbarProjectInfo{
+    display: grid;
+    align-items: center;
+    -webkit-app-region: drag;
+    .projectInfoWrap{
+        display: flex;
+        align-items: center;
+        .line{
+            width: 2px;
+            margin-right: 10px;
+            height: 22px;
+            border-radius: 100px;
+            background-color: white;
+        }
+        p{
+            font-size: 14px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .notSavedIndicator{
+            height: 5px;
+            width: 5px;
+            margin: auto;
+            margin-left: 8px;
+            border-radius: 100px;
+        }
+    }
+}
+.taskBarOther{
+    height: 37px;
+    display: flex;
+    justify-content: right;
+
+    .user{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .userWrap{
+            p{
+                padding-right: 10px;
+                font-size: 14px;
+                color: white;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .useremail{
+            }
+        }
+    }
+
+    .taskButtons{
+        display: flex;
+        align-items: center;
+        .TBox{
+            padding: 0 18px;
+            height: 5vh;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .TBox:hover{
+            background: rgb(45, 45, 45);
+        }
+        .cancel{
+             padding: 0 13px;
+        }
+        .cancel:hover{
+             padding: 0 13px;
+            background: rgb(220, 0, 0);
+        }
+    }
+}

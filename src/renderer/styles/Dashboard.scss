@@ -1,0 +1,95 @@
+.HubBoard {
+  height: 100vh;
+  overflow: hidden;
+  .DashDisplay {
+    // height: 40vh;
+    .dashOverlay {
+      height: 40vh;
+      display: flex;
+      align-items: flex-end;
+      background: rgba(0, 0, 0, 0.146);
+
+      .displayWrap {
+        margin: 0px 40px 30px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        .infoTextMain{
+            display: grid;
+            align-items: flex-end;
+        .hubMainText {
+          padding-bottom:0px;
+          font-size: 35px;
+        }}
+        .helpersSection{
+            display: grid;
+            justify-content: right;
+        }
+        .helperSectionWrap{
+            text-align: right;
+            .hubButton{
+                margin-bottom: 10px;
+            }
+        }
+      }
+    }
+  }
+ 
+  .DashContent {
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1.2fr 5fr;
+    .side{
+    }
+  }
+  .projects{
+    .dashboardProjectWrap{
+      padding: 0 30px 0 40px;
+      overflow-y: scroll; 
+      height: calc(100vh - 40vh);
+      .content{
+        display:  grid;
+        grid-template-columns: repeat(auto-fit, 228px + 25px);
+        // justify-content: center;
+        justify-items: center;
+        padding: 50px 0 100px;
+      }   
+    }
+    .plusSection{
+      border-radius: 10px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 20px;
+      right: 40px;
+      color: rgb(255, 255, 255);
+      width: 40px;
+      background: black;
+      transition: 5s;
+      overflow-x: hidden;
+      .textNewProject{
+        display: none;
+      }
+      .iconBoxs{
+        display: grid;
+      align-items: center;
+      justify-content: center;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .plusSection:hover{
+      transition: 5s;
+      width: fit-content;
+      .textNewProject{
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 10px 0 15px;
+      }
+    }
+  }
+}
+
+

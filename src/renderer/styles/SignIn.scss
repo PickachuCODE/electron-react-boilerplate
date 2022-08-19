@@ -1,0 +1,31 @@
+.SignIn, .allSet_Main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signInBox {
+  .imageHolder {
+    text-align: center;
+    padding-bottom: 40px;
+
+    img {
+      width: 80px;
+    }
+  }
+  .textSection {
+    margin-bottom: 20px;
+  }
+  
+}
+.imageBox_Main{
+  display: grid;
+  justify-content: center;
+}
+.imageBox{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    margin-bottom: 20px;
+  }

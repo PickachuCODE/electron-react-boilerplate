@@ -1,0 +1,83 @@
+.athtop {
+    margin: 10px;
+    position: fixed;
+    width: 100%;
+}
+.Header-Tip-Loading,
+.content-Tip-Loading {
+    text-align: center;
+}
+.loadingCoponents {
+    height: calc(100vh - 20px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.loadingWrap {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.boundingBox {
+    display: grid;
+    grid-template-columns: 60px 60px;
+}
+.boxLoadHolder1,
+.boxLoadHolder2,
+.boxLoadHolder3,
+.boxLoadHolder4 {
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.boxLoadHolder1 {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+.boxLoadHolder2 {
+    display: grid;
+    justify-content: right;
+    align-items: baseline;
+}
+.boxLoadHolder3 {
+    display: grid;
+    justify-content: right;
+    align-items: baseline;
+}
+.boxLoadHolder4 {
+    display: grid;
+    justify-content: right;
+    align-items: baseline;
+}
+
+#load-1,
+#load-2,
+#load-3,
+#load-4 {
+    height: calc(8px);
+    width: calc(8px);
+    background-color: #2bea6c;
+    position: absolute;
+}
+#load-1 {
+    bottom: 0;
+    right: 0;
+    margin: 2px;
+}
+#load-2 {
+    bottom: 0;
+    left: 0;
+    margin: 2px;
+}
+#load-3 {
+    top: 0;
+    right: 0;
+    margin: 2px;
+}
+#load-4 {
+    top: 0;
+    left: 0;
+    margin: 2px;
+}
